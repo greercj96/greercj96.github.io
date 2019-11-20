@@ -1,0 +1,37 @@
+*{
+  font-family:'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: rgb(20, 101, 156);
+}
+
+p{
+  color: rgb(20, 156, 72);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fluid{
+  width: 100%;
+}
+
+.thirds{
+width: 33%;
+display: inline-block;
+}
+
+.quarters{
+width: 24.5%;
+display: inline-block;
+}
+
+.halves{
+  width: 49.8%;
+  display: inline-block;
+
+}
+
+body{
+/*  background-color: black;*/
+}
