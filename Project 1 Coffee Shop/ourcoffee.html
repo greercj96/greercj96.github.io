@@ -11,10 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" type = "text/css">
-    <title>Our Team</title>
+    <title>Our Coffee</title>
   </head>
 
   <body>
@@ -43,7 +41,7 @@
       <!--<img src="coffeemachine.jpg" class = "img-fluid top-buffer" alt=""> -->
 <div class = "row justify-content-center">
   <div class = "col-6 ">
-          <img src="coffeelp.jpg" class = "top-buffer ourcoffee img-fluid" alt="">
+          <img data-src="coffeelp.jpg" class = "top-buffer ourcoffee img-fluid lazy" alt="">
     </div>
 </div>
 
@@ -106,10 +104,18 @@
 
 
 
-
-
-
   </div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+
+
+  <script type = "text/javascript">
+  var lazyloadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+    // ...more custom settings
+  });
+  </script>
   </body>
 </html>

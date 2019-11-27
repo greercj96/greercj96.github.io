@@ -38,7 +38,7 @@
  <div class = "row top-buffer equal">
 <div class = col>
    <div class=" card h-100 grow">
-   <img class="card-img-top" src="adams.jpg" alt="Card image cap">
+   <img class="card-img-top lazy" data-src="adams.jpg" alt="Card image cap">
    <div class="card-body">
      <h4 class = "card-text">Amanda Adams</h4>
      <h5 class = "card-text">Barista</h5>
@@ -50,7 +50,7 @@
 </div>
   <div class = "col">
    <div class="card h-100 grow">
-   <img class="card-img-top" src="smith.jpg" alt="Card image cap">
+   <img class="card-img-top lazy" data-src="smith.jpg" alt="Card image cap">
    <div class="card-body">
      <h4 class = "card-text">John Smith</h4>
      <h5 class = "card-text">Musician</h5>
@@ -62,7 +62,7 @@
 
 <div class = "col">
    <div class="card h-100 grow">
-   <img class="card-img-top" src="cage.jpg" alt="Card image cap">
+   <img class="card-img-top lazy" data-src="cage.jpg" alt="Card image cap">
    <div class="card-body">
      <h4 class = "card-text">Ashley Cage</h4>
      <h5 class = "card-text">Purchasing Officer</h5>
@@ -103,6 +103,19 @@
 
 
   </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+
+
+  <script type = "text/javascript">
+  var lazyloadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+    // ...more custom settings
+  });
+  </script>
 
   </body>
 </html>
