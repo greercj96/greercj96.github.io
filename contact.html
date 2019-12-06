@@ -12,7 +12,7 @@
 <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
@@ -21,7 +21,7 @@
     <title>Shades of Greer</title>
   </head>
   <body>
-    <nav class= "navbar navbar-expand-sm tm-navbar navbar-dark">
+    <nav class= "navbar navbar-expand-sm tm-navbar navbar-light ">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,6 +38,7 @@
         <li class="nav-item">
         <a class="nav-link" href="photography.html">photography</a>
         </li>
+
         <li class="nav-item">
         <a class="nav-link" href="resume.html">resume</a>
         </li>
@@ -48,71 +49,56 @@
     </nav>
 
 
+    <!------ Include the above in your HEAD tag ---------->
 
-<div class = "container">
-<div class = "row">
-  <div class = "col-xs-4 col-md-2 text-center offset-md-5 offset-sm-4">
-    <img class = "img-fluid rounded-circle" src= "https://res.cloudinary.com/greercj96/image/upload/c_scale,h_500,w_500/v1575402100/Personal%20Website/profile_botxki.jpg" alt="Greer">
-  </div>
-
-  <div class = "row">
-  <div class = "col text-center">
-      <div class = "col text-center">
-        <h1 class = "wb-font animated fadeIn ">hello</h1>
-      </div>
-          <p>I'm Greer Jackson, a Howard University journalism major, computer science minor from Georgetown, Guyana.
-            During my undergraduate career at Howard, I hope to find a way to merge my interests in photography, technology, and writing.</p>
-
-          <p>  This space serves as a hub for some of my creative pursuits.</p>
-
-          <p> I consider music an existential need,literature a godsend, and tea a must-have.When my head isn't buried in a book, I'm usually behind the
-            viewfinder of a camera or shamelessly enjoying solitary moments of introspection. </p>
-
-
-
-  </div>
-
-</div>
-
-</div>
-
-
-<div class = "row mb-4 mt-4">
-  <div class = "col">
-    <div class="card" style="width: 18rem;">
-  <img src="https://res.cloudinary.com/greercj96/image/upload/c_scale,h_333,w_500/v1575636674/Personal%20Website/aaron-burden-CKlHKtCJZKk-unsplash_mvbdyj.jpg" class="card-img-top lazy" alt="...">
-  <div class="card-body">
-    <p class="card-font text-center">writing</p>
-  </div>
-</div>
-  </div>
-
-  <div class = "col">
-    <div class="card" style="width: 18rem;">
-  <img src="https://res.cloudinary.com/greercj96/image/upload/c_scale,w_500/v1575636168/Personal%20Website/nordwood-themes-ubIWo074QlU-unsplash_atnvdi.jpg" class="card-img-top lazy" alt="...">
-  <div class="card-body">
-    <p class="card-font text-center">graphic design</p>
-  </div>
-</div>
-
-  </div>
-
-  <div class = "col">
-    <div class="card" style="width: 18rem;">
-  <img src="https://res.cloudinary.com/greercj96/image/upload/c_scale,w_500/v1575635884/Personal%20Website/jakob-owens-T45qqDYFpsY-unsplash_atiqcb.jpg" class="card-img-top lazy" alt="...">
-  <div class="card-body">
-    <p class="card-font text-center">photo and video</p>
-  </div>
-</div>
-  </div>
-
-</div>
+    <div class="container contact">
+    	<div class="row">
+    		<div class="col-md-3">
+    			<div class="contact-info">
+    				<img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+    				<h2>Contact Me</h2>
+    				<h4>I would love to hear from you !</h4>
+    			</div>
+    		</div>
+    		<div class="col-md-9">
+    			<div class="contact-form">
+    				<div class="form-group">
+    				  <label class="control-label col-sm-2" for="fname">First Name:</label>
+    				  <div class="col-sm-10">
+    					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+    				  </div>
+    				</div>
+    				<div class="form-group">
+    				  <label class="control-label col-sm-2" for="lname">Last Name:</label>
+    				  <div class="col-sm-10">
+    					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+    				  </div>
+    				</div>
+    				<div class="form-group">
+    				  <label class="control-label col-sm-2" for="email">Email:</label>
+    				  <div class="col-sm-10">
+    					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    				  </div>
+    				</div>
+    				<div class="form-group">
+    				  <label class="control-label col-sm-2" for="comment">Comment:</label>
+    				  <div class="col-sm-10">
+    					<textarea class="form-control" rows="5" id="comment"></textarea>
+    				  </div>
+    				</div>
+    				<div class="form-group">
+    				  <div class="col-sm-offset-2 col-sm-10">
+    					<button type="submit" class="btn btn-default">Submit</button>
+    				  </div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
 
 
 
-
-</div>
-
+<!-- Footer -->
 <footer class="tm-footer page-footer font-small cyan darken-3">
 
   <!-- Footer Elements -->
@@ -163,6 +149,8 @@
 
 </footer>
 <!-- Footer -->
+
+
 
 
 
