@@ -1,0 +1,31 @@
+.tm-navbar{
+  background-color: rgb(105,105,105,0.1);
+  text-align: center;
+  padding: 5px;
+
+}
+
+.tm-navbar ul{
+display: flex;
+text-align: center;
+justify-content: space-around;
+}
+
+.tm-navbar ul li{
+  font-size: 24px;
+  font-weight: normal;
+  margin: 5px;
+  display: inline-block;
+
+}
+
+.tm-navbar ul li a{
+  color: rgb(217,83,79);
+  text-decoration: none;
+  display: inline-block
+}
+
+.tm-navbar ul li a:hover{
+  color:rgb(0,0,0);
+  opacity: 50%;
+}

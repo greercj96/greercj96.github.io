@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="mynav">
+        </ul>
+      </div>
+    </nav>
+    <div id="jumbo" class="jumbotron">
+
+    </div>
+    <h1 id="heading">Hello, world!</h1>
+    <div id="jumbo2" class="jumbotron">
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <ul id="myfoods">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        console.log("It works!!");
+        alert("I am a popup window");
+
+        var things = "50";
+        var things2 = "5";
+        console.log(things);
+        console.log("The value in things is:" + things);
+        var things3 = things + things2;
+        console.log(things3);
+
+        things3 = things - things2;
+        console.log(things3);
+
+        things3 = things * things2;
+        console.log(things3);
+
+        things3 = things / things2;
+        console.log(things3);
+        $('#heading').html('Learing JavaScript');
+        $('#jumbo').append('<h1>This is a title</h1><p class="text-center">This is a paragraph text</p>');
+        var title = "This is a title";
+        var subtitle = "This is a paragarph";
+        $('#jumbo2').append('<h1>'+title+'</h1><p>'+subtitle+'</p>');
+
+        var foods = ["Pasta", "Pizza", "Burgers", "Fries", "Ice-Cream"];
+        console.log(foods);
+        console.log(foods.length);
+        console.log(foods[4]);
+
+        for(var i = 0; i < foods.length; i++){
+            console.log(foods[i]);
+            $("#myfoods").append('<li>'+ foods[i]+'</li>')
+            /*$("#mynav").append('<li class="nav-item"><a class="nav-link" href="#">'+ foods[i]+'</a></li>')*/
+        }
+        var content = {
+            "navbar": [
+                {
+                    "title": "Home",
+                    "url" : "index.html"
+                },
+                {
+                    "title": "About Us",
+                    "url" : "about.html"
+                },
+                {
+                    "title": "Our Team",
+                    "url" : "team.html"
+                },
+                {
+                    "title": "Contact Us",
+                    "url" : "contact.html"
+                }
+            ],
+            "about.html" : {
+                "blocks" : [
+                    {
+                        "type" : "jumbotron",
+                        "heading" : "This is a pretty cool title",
+                        "subheading": "This is our cool subheading that goes here"
+                    }
+
+
+                ]
+            }
+
+        }
+
+        for(var i=0; i<content.navbar.length; i++){
+            console.log(content.navbar[i].title + ' | ' + content.navbar[i].url);
+            $("#mynav").append('<li class="nav-item"><a class="nav-link" href="'+ content.navbar[i].url +'">'+ content.navbar[i].title +'</a></li>')
+        }
+
+    });
+  </script>
+
+  </body>
+</html>

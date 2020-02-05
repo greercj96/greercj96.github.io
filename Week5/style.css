@@ -1,0 +1,16 @@
+
+.top-buffer{
+  margin-top: 20px;
+}
+
+.bottom-buffer{
+  margin-bottom: 20px;
+}
+
+.male{
+  color: rgb(0,90,255);
+}
+
+.female{
+  color:rgb(255,20,147);
+}
